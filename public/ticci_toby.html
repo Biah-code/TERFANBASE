@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticci Toby — Histórias &lt;ter&gt; Fanbase</title>
+  <link rel="stylesheet" href="historias.css">
+  <style>
+    .section-divider {
+      margin-top: 56px;
+    }
+    .hero-links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .hero-cta-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: rgba(124, 58, 237, 0.14);
+      color: #c4b5fd;
+      border: 1px solid rgba(167, 139, 250, 0.45);
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 13px 22px;
+      border-radius: 10px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .hero-cta-outline:hover {
+      background: rgba(124, 58, 237, 0.3);
+      color: #fff;
+    }
+    .story-reader-box {
+      max-width: 760px;
+    }
+    .story-text {
+      font-size: 1rem;
+      line-height: 1.85;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="boas_vindas.html" class="brand-logo">
+      <img src="logo.png" onerror="this.style.display='none'" alt="Logo" class="logo-icon">
+      <h1>&lt;ter&gt;</h1>
+    </a>
+    <nav>
+      <a href="boas_vindas.html">Início</a>
+      <a href="edits.html">Edits</a>
+      <a href="https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q" target="_blank" rel="noopener noreferrer">TikTok Oficial</a>
+    <a href="ben_drowned.html">Ben Drowned</a>
+    <a href="ticci_toby.html" class="active">Ticci Toby</a>
+    <a href="#" onclick="fazerLogout()" class="btn-sair">Sair</a>
+    </nav>
+  </header>
+
+  <section class="hero-banner">
+    <span class="hero-tag">CREEPYPASTA • TOBY ERIN ROGERS</span>
+    <h2>Histórias: Ticci Toby</h2>
+    <p>A história completa de <strong>Toby Erin Rogers</strong>, desde o retorno do hospital após a morte de sua irmã Lyra até o encontro com a criatura sem rosto.</p>
+    <div class="hero-links">
+      <button type="button" class="hero-cta" onclick="abrirModalNovoCapitulo()">+ Adicionar Capítulo</button>
+      <a href="http://www.youtube.com/watch?v=IYOvFlG4WRw" target="_blank" rel="noopener noreferrer" class="hero-cta-outline">▶ História Base (YouTube)</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- ======================================================================
+         SEÇÃO 1: A ORIGEM DE TOBY ERIN ROGERS (6 CAPÍTULOS DETALHADOS)
+         ====================================================================== -->
+    <div class="edits-toolbar">
+      <div>
+        <h3 class="section-title">🪓 Parte I — A Origem de Toby Erin Rogers</h3>
+        <span class="section-subtitle">A trajetória completa dividida em 6 capítulos detalhados</span>
+      </div>
+      <button type="button" class="btn-add-edit" onclick="abrirModalNovoCapitulo()">+ Novo Capítulo</button>
+    </div>
+
+    <div class="product-grid" id="historiasGrid">
+
+      <!-- ==================== PARTE 01 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=IYOvFlG4WRw" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="tobyR.webp" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Vídeo</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Parte 01 — O Caminho de Volta do Hospital</h4>
+          <p class="product-desc">Com o braço direito enfaixado e sem sentir dor física, Toby volta para casa com a mãe atormentado pelas lembranças do acidente de Lyra.</p>
+          <div class="price-container">
+            <span class="price">📂 Origem • 01/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(0)">Ler História</button>
+            <button type="button" class="btn-secondary" onclick="assistirVideo('Ticci Toby — Parte 01', 'http://www.youtube.com/watch?v=IYOvFlG4WRw')">Ver Vídeo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== PARTE 02 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=IYOvFlG4WRw" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="Ticci1.jpg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Vídeo</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Parte 02 — A Casa Azul e o Ódio Pelo Pai</h4>
+          <p class="product-desc">Ao estacionar diante da pequena casa azul, Toby se revolta ao ver o carro vermelho do pai alcoólatra que sequer visitou Lyra antes de morrer.</p>
+          <div class="price-container">
+            <span class="price">💔 Origem • 02/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(1)">Ler História</button>
+            <button type="button" class="btn-secondary" onclick="assistirVideo('Ticci Toby — Parte 02', 'http://www.youtube.com/watch?v=IYOvFlG4WRw')">Ver Vídeo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== PARTE 03 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=IYOvFlG4WRw" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="toby6.png" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Vídeo</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Parte 03 — A Criatura Sem Rosto Entre as Árvores</h4>
+          <p class="product-desc">Durante a madrugada, Toby olha pela janela do quarto e avista uma figura alta sem feições e de braços longos sob um zumbido intenso.</p>
+          <div class="price-container">
+            <span class="price">🌲 Origem • 03/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(2)">Ler História</button>
+            <button type="button" class="btn-secondary" onclick="assistirVideo('Ticci Toby — Parte 03', 'http://www.youtube.com/watch?v=IYOvFlG4WRw')">Ver Vídeo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== PARTE 04 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=IYOvFlG4WRw" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="ticci4.jpg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Vídeo</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Parte 04 — Tiques Severos e Sangue nas Mãos</h4>
+          <p class="product-desc">Consumido pela raiva e pela perda de memória, Toby rói os próprios dedos sem sentir dor até manchar as calças de sangue.</p>
+          <div class="price-container">
+            <span class="price">🩸 Origem • 04/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(3)">Ler História</button>
+            <button type="button" class="btn-secondary" onclick="assistirVideo('Ticci Toby — Parte 04', 'http://www.youtube.com/watch?v=IYOvFlG4WRw')">Ver Vídeo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== PARTE 05 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=IYOvFlG4WRw" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="toby5.jpg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Vídeo</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Parte 05 — A Consulta com a Dra. Oliver</h4>
+          <p class="product-desc">Levado pela mãe a uma especialista, Toby responde às perguntas básicas até desmaiar ao ser questionado sobre o acidente da irmã.</p>
+          <div class="price-container">
+            <span class="price">🩺 Origem • 05/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(4)">Ler História</button>
+            <button type="button" class="btn-secondary" onclick="assistirVideo('Ticci Toby — Parte 05', 'http://www.youtube.com/watch?v=IYOvFlG4WRw')">Ver Vídeo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== PARTE 06 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=IYOvFlG4WRw" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="proxy7.jpg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Vídeo</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Parte 06 — O Machado, os Óculos Laranja e o Fim</h4>
+          <p class="product-desc">Após um pesadelo sombrio no hospital, Toby quebra o quadro de incêndio, pega o machado, a máscara e os óculos laranja e segue a entidade.</p>
+          <div class="price-container">
+            <span class="price">🪓 Origem • 06/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(5)">Ler História</button>
+            <button type="button" class="btn-secondary" onclick="assistirVideo('Ticci Toby — Parte 06', 'http://www.youtube.com/watch?v=IYOvFlG4WRw')">Ver Vídeo</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================================
+         SEÇÃO 2: ARQUIVOS DO CASO & ELEMENTOS PSICOLÓGICOS (6 ARQUIVOS)
+         ====================================================================== -->
+    <div class="edits-toolbar section-divider">
+      <div>
+        <h3 class="section-title">🥽 Parte II — Arquivos do Caso &amp; Elementos da Lenda</h3>
+        <span class="section-subtitle">Os detalhes clínicos, traumas familiares e símbolos que marcaram Ticci Toby</span>
+      </div>
+    </div>
+
+    <div class="product-grid" id="arquivosGrid">
+
+      <!-- ==================== ARQUIVO 01 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=IYOvFlG4WRw" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="ticci4.jpg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Vídeo</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Arquivo 01 — A Insensibilidade Congênita à Dor</h4>
+          <p class="product-desc">Como o distúrbio raro que impedia Toby de sentir qualquer ferimento físico moldou tanto sua sobrevivência quanto sua destruição.</p>
+          <div class="price-container">
+            <span class="price">🧬 Arquivo • 01/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(6)">Ler Arquivo</button>
+            <button type="button" class="btn-secondary" onclick="assistirVideo('Insensibilidade à Dor', 'http://www.youtube.com/watch?v=IYOvFlG4WRw')">Ver Vídeo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== ARQUIVO 02 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=IYOvFlG4WRw" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="ticci2.png" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Vídeo</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Arquivo 02 — A Síndrome de Tourette e o Apelido</h4>
+          <p class="product-desc">Os tiques incontroláveis no pescoço que provocaram zombarias na escola e obrigaram Toby a abandonar as aulas presenciais.</p>
+          <div class="price-container">
+            <span class="price">⚡ Arquivo • 02/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(7)">Ler Arquivo</button>
+            <button type="button" class="btn-secondary" onclick="assistirVideo('Síndrome de Tourette', 'http://www.youtube.com/watch?v=IYOvFlG4WRw')">Ver Vídeo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== ARQUIVO 03 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=IYOvFlG4WRw" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="toby5.jpg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Vídeo</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Arquivo 03 — As Fotos Antigas e a Ruína da Casa</h4>
+          <p class="product-desc">O retrato de uma família feliz nas paredes do quarto antes de o pai se tornar alcoólatra e transformar o lar em um inferno.</p>
+          <div class="price-container">
+            <span class="price">🏠 Arquivo • 03/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(8)">Ler Arquivo</button>
+            <button type="button" class="btn-secondary" onclick="assistirVideo('A Casa Azul', 'http://www.youtube.com/watch?v=IYOvFlG4WRw')">Ver Vídeo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== ARQUIVO 04 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=IYOvFlG4WRw" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="tobyR.webp" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Vídeo</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Arquivo 04 — A Visão de Lyra no Leito Hospitalar</h4>
+          <p class="product-desc">O pesadelo perturbador no hospital em que Lyra surge ao lado da cama diante da criatura alta e das crianças de olhos negros.</p>
+          <div class="price-container">
+            <span class="price">👁️ Arquivo • 04/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(9)">Ler Arquivo</button>
+            <button type="button" class="btn-secondary" onclick="assistirVideo('Visão no Hospital', 'http://www.youtube.com/watch?v=IYOvFlG4WRw')">Ver Vídeo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== ARQUIVO 05 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=IYOvFlG4WRw" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="Ticci1.jpg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Vídeo</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Arquivo 05 — O Quadro de Segurança Contra Incêndio</h4>
+          <p class="product-desc">Como o machado de emergência, a máscara e os óculos de fumaça laranja deram forma à imagem definitiva de Ticci Toby.</p>
+          <div class="price-container">
+            <span class="price">🥽 Arquivo • 05/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(10)">Ler Arquivo</button>
+            <button type="button" class="btn-secondary" onclick="assistirVideo('Óculos Laranja e Machado', 'http://www.youtube.com/watch?v=IYOvFlG4WRw')">Ver Vídeo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== ARQUIVO 06 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=IYOvFlG4WRw" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="toby6.png" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Vídeo</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Arquivo 06 — A Criatura de Terno Preto na Escuridão</h4>
+          <p class="product-desc">O momento final em que o alarme soa, a visão embaça e Toby Rogers morre para seguir a entidade de rosto branco.</p>
+          <div class="price-container">
+            <span class="price">🌑 Arquivo • 06/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(11)">Ler Arquivo</button>
+            <button type="button" class="btn-secondary" onclick="assistirVideo('O Nascimento de Ticci Toby', 'http://www.youtube.com/watch?v=IYOvFlG4WRw')">Ver Vídeo</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL DE LEITURA DA HISTÓRIA -->
+  <div class="modal-overlay" id="modalLeitura" onclick="if(event.target === this) fecharModalLeitura()">
+    <div class="modal-box story-reader-box">
+      <span class="reader-tag" id="leituraTag">TICCI TOBY</span>
+      <h3 id="leituraTitulo">Título do Capítulo</h3>
+      <div class="story-text" id="leituraTexto"></div>
+      <div class="modal-actions">
+        <a id="leituraTikTokLink" href="http://www.youtube.com/watch?v=IYOvFlG4WRw" target="_blank" rel="noopener noreferrer" class="btn-add-edit">▶ Assistir Vídeo</a>
+        <button type="button" class="btn-cancelar" onclick="fecharModalLeitura()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA ADICIONAR NOVO CAPÍTULO -->
+  <div class="modal-overlay" id="modalNovoCapitulo" onclick="if(event.target === this) fecharModalNovoCapitulo()">
+    <div class="modal-box">
+      <h3>📖 Adicionar Capítulo — Ticci Toby</h3>
+      <form id="formNovoCapitulo">
+        <label for="capTitulo">Título do Capítulo *</label>
+        <input type="text" id="capTitulo" placeholder="Ex: Capítulo Extra — Sombras na Floresta" required>
+
+        <label for="capResumo">Resumo curto para o card *</label>
+        <input type="text" id="capResumo" placeholder="Ex: Novos registros encontrados sobre Ticci Toby." required>
+
+        <label for="capTexto">História completa *</label>
+        <textarea id="capTexto" rows="5" placeholder="Escreva aqui a história completa..." required></textarea>
+
+        <label for="capCapa">Imagem de capa (na pasta public/) ou URL</label>
+        <input type="text" id="capCapa" placeholder="Ex: images (2).jpg">
+
+        <label for="capLink">Link do vídeo (YouTube ou TikTok)</label>
+        <input type="url" id="capLink" value="https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q">
+
+        <div class="modal-actions">
+          <button type="button" class="btn-cancelar" onclick="fecharModalNovoCapitulo()">Cancelar</button>
+          <button type="submit" class="btn-add-edit">Salvar Capítulo</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&lt;ter&gt; Fanbase • Histórias de Ticci Toby por <strong>Kailtern</strong></p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    const STORAGE_TOBY = 'terFanbaseHistoriasToby';
+
+    const capitulosFixos = [
+      // ==================== SEÇÃO 1: A ORIGEM DE TOBY ERIN ROGERS ====================
+      {
+        tag: 'PARTE I • ORIGEM DE TICCI TOBY (01/06)',
+        titulo: 'Parte 01 — O Caminho de Volta do Hospital',
+        texto: `A luz do dia atravessava os galhos das árvores ao longo da estrada, mas para Toby Erin Rogers o trajeto de volta para casa parecia não ter fim. No banco da frente, sua mãe — uma mulher de cerca de cinquenta anos, de feições gentis e olhos verdes profundos — dirigia com uma expressão carregada de tristeza, esforçando-se para esboçar um sorriso sempre que olhava pelo espelho retrovisor para verificar como o filho estava.
+
+No banco de trás, o garoto de dezessete anos parecia completamente exausto. Com os cabelos castanhos bagunçados, a pele pálida e os olhos escuros vazios de expressão, Toby ainda vestia a camiseta e a calça brancas entregues pelo hospital. Havia cortes próximos à sua boca e todo o seu braço direito estava enfaixado do pulso até o ombro, depois de ter sido esmagado ao estilhaçar o vidro no acidente.
+
+Apesar da gravidade das feridas, Toby não sentia absolutamente nada. Ele havia nascido com uma condição neurológica rara que o deixava totalmente insensível à dor física — poderia perder um braço inteiro e ainda assim não registraria qualquer sofrimento no corpo. Somado a isso, convivia com a Síndrome de Tourette, que provocava tiques motores incontroláveis e espasmos bruscos no pescoço. Na escola, as outras crianças riam alto e o ridicularizavam chamando-o de "Ticci Toby", o que o levou a abandonar as aulas e passar a estudar em casa.
+
+Quando o carro passou por um pequeno buraco no asfalto, toda a memória da colisão voltou de uma só vez: os estilhaços de vidro voando por toda parte, o sangue, as explosões e a imagem de sua irmã mais velha, Lyra. Toby havia sobrevivido sem sentir um arranhão sequer, mas não conseguia parar de se perguntar por que tinha que ter sido ela.`,
+        link: 'http://www.youtube.com/watch?v=IYOvFlG4WRw'
+      },
+      {
+        tag: 'PARTE I • ORIGEM DE TICCI TOBY (02/06)',
+        titulo: 'Parte 02 — A Casa Azul e o Ódio Pelo Pai',
+        texto: `Depois de algumas horas na estrada, o carro finalmente entrou em um bairro antigo de casas simples e parou diante de uma pequena residência azul. Estacionado bem na frente estava um carro vermelho velho — o automóvel de seu pai. No mesmo instante, Toby sentiu uma onda de raiva e frustração tomar conta do peito, pois nunca o havia enxergado como um pai de verdade.
+
+Antes mesmo de abrir a porta, Toby perguntou à mãe por que aquele homem estava ali. Quando ela respondeu suavemente que ele era seu pai e estava ali porque queria vê-lo, Toby rebateu com amargura que ele sequer havia ido ao hospital para se despedir de Lyra antes de ela morrer, simplesmente porque estava bêbado demais para dirigir.
+
+Ao descerem do veículo, o pai permaneceu parado à distância, recusando-se até mesmo a oferecer um abraço de boas-vindas e proferindo palavras desagradáveis. A mãe ignorou o comportamento do marido, envolveu os ombros de Toby com o braço e o acompanhou para dentro, sugerindo que ele subisse para descansar até a hora do jantar.
+
+O quarto de Toby era pequeno, contendo apenas uma cama, um armário e uma janela. Nas paredes, antigas fotografias ainda retratavam os tempos em que eram uma família unida, antes de o pai se tornar alcoólatra e abusivo — uma mudança que havia destruído principalmente sua mãe e sua irmã, já que Toby era imune à dor física. Mesmo após refazer o curativo do braço que vivia soltando por causa dos tiques, ele desceu para jantar em um silêncio sufocante, incapaz de engolir um único pedaço de comida enquanto o pai continuava sentado à mesa.`,
+        link: 'http://www.youtube.com/watch?v=IYOvFlG4WRw'
+      },
+      {
+        tag: 'PARTE I • ORIGEM DE TICCI TOBY (03/06)',
+        titulo: 'Parte 03 — A Criatura Sem Rosto Entre as Árvores',
+        texto: `De volta ao quarto após o jantar silencioso, Toby deitou-se na cama, mas o sono simplesmente não vinha. Ele se revirava de um lado para o outro enquanto o som estridente dos pneus derrapando e os gritos desesperados de Lyra ecoavam sem parar dentro de sua mente. Para impedir que sua mãe o escutasse do andar de baixo, ele afundou o rosto no travesseiro e chorou inconsolavelmente até ficar sem forças.
+
+Quando a crise de choro diminuiu um pouco, Toby levantou-se e caminhou até a janela em busca de ar e de alguma distração para acalmar os pensamentos. Ao esfregar os olhos e observar a linha escura das árvores do lado de fora, congelou no lugar: havia algo parado bem no meio da mata.
+
+Não era possível distinguir o que aquilo realmente era, mas Toby não conseguia desviar o olhar. A figura era extremamente alta, possuía braços anormalmente longos e não tinha nenhuma feição no rosto — sem olhos, sem boca e sem nariz. No mesmo instante, um zumbido estranho começou a crescer dentro de seus ouvidos, tornando-se cada vez mais alto e ensurdecedor até que toda a sua visão escureceu por completo.`,
+        link: 'http://www.youtube.com/watch?v=IYOvFlG4WRw'
+      },
+      {
+        tag: 'PARTE I • ORIGEM DE TICCI TOBY (04/06)',
+        titulo: 'Parte 04 — Tiques Severos e Sangue nas Mãos',
+        texto: `Toby despertou em sua cama na manhã seguinte com uma sensação estranha: não sentia nenhum cansaço e seus pensamentos pareciam fluir de uma maneira completamente diferente. Contudo, assim que tentou se levantar, uma tontura forte o obrigou a cambalear até a porta e descer as escadas com dificuldade.
+
+Na sala de estar, encontrou a mesma rotina que se repetiria pelos dias seguintes: sua mãe limpando a casa em silêncio enquanto seu pai permanecia largado no sofá assistindo à televisão. A cada vez que saía do quarto e via que o pai continuava morando ali sem que a mãe o expulsasse, o ressentimento e o mal-estar dentro de Toby cresciam ainda mais.
+
+Durante as madrugadas, ele passava horas imóvel diante da janela tentando rever aquela criatura estranha entre as árvores. Seus tiques ficaram cada vez mais intensos e, tomado pelo nervosismo constante, passou a roer compulsivamente as unhas e a pele dos próprios dedos. Como não sentia dor física, quase arrancou a ponta dos dedos sem perceber — só notando o que havia feito quando viu as manchas vermelhas de sangue espalhadas pelas calças. Assustada ao entrar no quarto, sua mãe correu para enfaixar suas mãos e jurou nunca mais deixá-lo sozinho, mas Toby já se afastava de qualquer contato humano, sofrendo lapsos de memória e alucinações frequentes.`,
+        link: 'http://www.youtube.com/watch?v=IYOvFlG4WRw'
+      },
+      {
+        tag: 'PARTE I • ORIGEM DE TICCI TOBY (05/06)',
+        titulo: 'Parte 05 — A Consulta com a Dra. Oliver',
+        texto: `Cada vez mais preocupada com o estado mental do filho, com as perdas de memória e com os ferimentos que ele provocava em si mesmo sem notar, a mãe de Toby decidiu levá-lo a uma especialista. No consultório, eles foram recebidos pela Dra. Oliver, uma médica jovem de cabelos loiros que usava um vestido de bolinhas e segurava um caderno de anotações e uma caneta.
+
+Com um sorriso acolhedor, a Dra. Oliver cumprimentou o rapaz, que apenas a encarou em silêncio e respondeu com um leve aceno de cabeça. Para avaliar sua lucidez e memória recente, a especialista iniciou uma série de perguntas simples: perguntou sua idade, ao que ele respondeu ter dezessete anos; seu nome completo, confirmado como Toby Erin Rogers; e a data de seu aniversário, 28 de abril.
+
+Em seguida, a médica perguntou quantos membros havia em sua família. Toby hesitou por um instante antes de responder: "Minha mãe, meu pai e minha irmã." Com voz cuidadosa, a Dra. Oliver disse que sabia o que havia acontecido com Lyra, lamentou profundamente a perda e perguntou se ele conseguia se lembrar de alguma coisa sobre o acidente. Ao cruzar o olhar com o dela, a mente de Toby ficou completamente em branco. Um arrepio gelado percorreu suas costas, sua voz desapareceu e ele desabou desacordado no consultório.`,
+        link: 'http://www.youtube.com/watch?v=IYOvFlG4WRw'
+      },
+      {
+        tag: 'PARTE I • ORIGEM DE TICCI TOBY (06/06)',
+        titulo: 'Parte 06 — O Machado, os Óculos Laranja e o Fim',
+        texto: `Toby abriu os olhos deitado em uma cama de hospital enquanto aquele mesmo zumbido ensurdecedor voltava a ecoar em sua cabeça. Ao olhar ao redor procurando a criatura alta, deparou-se com uma visão aterradora bem ao lado do leito: era sua irmã morta, com a pele pálida, os olhos completamente vazios, sangue escorrendo pelo rosto e parte da mandíbula pendurada. Logo atrás dela surgia novamente a criatura sem rosto, acompanhada por fileiras de crianças e adolescentes de olhos totalmente negros. Toby tentou gritar e fugir antes de desmaiar mais uma vez.
+
+Quando finalmente acordou daquele pesadelo, sua cabeça girava sem parar e um ódio incontrolável crescia dentro dele ao lembrar da mãe e do pai. Sentindo que estava enlouquecendo, vestiu seu moletom, saiu silenciosamente pela porta do quarto e começou a caminhar pelo corredor bem atrás de seu pai, com o corpo tremendo devido aos tiques.
+
+Ao notar um quadro de segurança contra incêndio fixado na parede, Toby estilhaçou o vidro com a mão enfaixada sem sentir a menor dor e retirou de lá um machado, uma máscara e óculos de fumaça com lentes laranja. Ao observar sua imagem refletida no vidro de uma janela, achou o visual perfeito e começou a rir alto. Seu pai se virou tarde demais: com o machado erguido, Toby o atingiu fatalmente enquanto o sangue se espalhava e o alarme disparava pelo corredor. Com a visão turva e o zumbido nos ouvidos, Toby avistou na escuridão a figura imponente de terno preto e rosto completamente branco — e caminhou em sua direção, selando a morte de Toby Rogers e o nascimento de Ticci Toby.`,
+        link: 'http://www.youtube.com/watch?v=IYOvFlG4WRw'
+      },
+
+      // ==================== SEÇÃO 2: ARQUIVOS DO CASO & ELEMENTOS ====================
+      {
+        tag: 'PARTE II • ARQUIVOS DO CASO (01/06)',
+        titulo: 'Arquivo 01 — A Insensibilidade Congênita à Dor',
+        texto: `A condição mais determinante na trajetória de Toby Erin Rogers era a insensibilidade congênita à dor, um distúrbio raro que o acompanhava desde a infância e impedia seu organismo de registrar qualquer estímulo doloroso. Durante o acidente de carro que tirou a vida de sua irmã, seu braço direito foi esmagado ao estilhaçar o vidro da janela, mas ele saiu dos destroços sem sentir qualquer incômodo físico.
+
+Essa mesma ausência de dor fazia com que Toby não percebesse quando seus próprios curativos se soltavam ou quando mordia e roía compulsivamente os próprios dedos durante crises de ansiedade, parando apenas ao enxergar o sangue manchando suas roupas. No desfecho da história, foi essa condição que lhe permitiu quebrar com a própria mão o vidro do quadro de segurança contra incêndio sem hesitar antes de empunhar o machado.`,
+        link: 'http://www.youtube.com/watch?v=IYOvFlG4WRw'
+      },
+      {
+        tag: 'PARTE II • ARQUIVOS DO CASO (02/06)',
+        titulo: 'Arquivo 02 — A Síndrome de Tourette e o Apelido',
+        texto: `Além de não sentir dor física, Toby convivia diariamente com a Síndrome de Tourette, responsável por provocar tiques motores involuntários e espasmos bruscos — principalmente movimentos repentinos no pescoço e tremores que fugiam por completo ao seu controle.
+
+No ambiente escolar, essa condição transformou-o em alvo constante de humilhações. Os colegas riam abertamente de seus espasmos e passaram a chamá-lo de "Ticci Toby", um apelido criado para ridicularizá-lo que o forçou a abandonar a escola regular e estudar isolado em casa. Após o trauma do acidente, seus tiques intensificaram-se ainda mais, tornando-se uma marca inseparável da figura que ele se tornaria.`,
+        link: 'http://www.youtube.com/watch?v=IYOvFlG4WRw'
+      },
+      {
+        tag: 'PARTE II • ARQUIVOS DO CASO (03/06)',
+        titulo: 'Arquivo 03 — As Fotos Antigas e a Ruína da Casa',
+        texto: `O quarto pequeno de Toby guardava o único registro de uma época em que sua vida parecia normal: nas paredes ainda estavam penduradas fotografias antigas de sua família sorrindo junta, antes de o alcoolismo transformar seu pai em uma figura violenta e abusiva.
+
+Enquanto o pai passava os dias embriagado ou largado no sofá diante da televisão, cabia à mãe tentar manter alguma aparência de calma dentro da pequena casa azul. Para Toby, o fato de o pai sequer ter ido ao hospital ver Lyra antes de ela morrer — por estar bêbado demais para dirigir — alimentou uma revolta silenciosa que cresceu dia após dia até se transformar em ódio incontrolável.`,
+        link: 'http://www.youtube.com/watch?v=IYOvFlG4WRw'
+      },
+      {
+        tag: 'PARTE II • ARQUIVOS DO CASO (04/06)',
+        titulo: 'Arquivo 04 — A Visão de Lyra no Leito Hospitalar',
+        texto: `O ponto de ruptura psicológica definitivo ocorreu logo após o desmaio de Toby no consultório da Dra. Oliver, quando ele não conseguiu suportar a pergunta sobre o que havia acontecido no acidente de carro. Ao recobrar a consciência em um leito de hospital, o zumbido mental retornou com força total.
+
+Na visão perturbadora que se formou ao lado de sua cama, sua irmã Lyra apareceu desfigurada pelos ferimentos da colisão — com pele pálida, olhos vazios, sangue pelo rosto e parte da mandíbula solta — enquanto a criatura sem rosto surgia logo atrás dela cercada por fileiras de crianças e adolescentes de olhos completamente negros, anunciando que Toby já estava preso àquele chamado.`,
+        link: 'http://www.youtube.com/watch?v=IYOvFlG4WRw'
+      },
+      {
+        tag: 'PARTE II • ARQUIVOS DO CASO (05/06)',
+        titulo: 'Arquivo 05 — O Quadro de Segurança Contra Incêndio',
+        texto: `Diferente de outras versões da lenda em que duas machadinhas são retiradas de uma garagem, nesta origem os elementos icônicos de Ticci Toby surgem diretamente de um quadro de emergência contra incêndio fixado na parede do corredor.
+
+Após quebrar o vidro com a mão enfaixada, Toby retira dali um machado de incêndio, uma máscara para cobrir a parte inferior do rosto e óculos de proteção contra fumaça com lentes laranja. Ao encarar o próprio reflexo na janela com o moletom, a máscara e as lentes alaranjadas, ele solta uma gargalhada alta ao perceber que aquela aparência estava perfeita para sua nova identidade.`,
+        link: 'http://www.youtube.com/watch?v=IYOvFlG4WRw'
+      },
+      {
+        tag: 'PARTE II • ARQUIVOS DO CASO (06/06)',
+        titulo: 'Arquivo 06 — A Criatura de Terno Preto na Escuridão',
+        texto: `Desde a primeira noite em que olhou pela janela de seu quarto em direção às árvores, Toby foi marcado pela presença silenciosa de uma entidade alta, de braços muito longos e rosto completamente liso, sem olhos, nariz ou boca, cuja aproximação sempre vinha acompanhada de um zumbido ensurdecedor.
+
+Nos instantes finais após o ataque ao pai e o disparo do alarme, com a visão embaçada e os ouvidos tomado pelo ruído contínuo, Toby avistou novamente aquela figura imponente vestida com um terno preto escuro e rosto inteiramente branco aguardando nas sombras. Ao dar o primeiro passo para segui-la, Toby Erin Rogers deixou de existir para dar lugar a Ticci Toby.`,
+        link: 'http://www.youtube.com/watch?v=IYOvFlG4WRw'
+      }
+    ];
+
+    function lerCapitulo(index) {
+      const custom = JSON.parse(localStorage.getItem(STORAGE_TOBY) || '[]');
+      const todos = [...capitulosFixos, ...custom];
+      const cap = todos[index];
+      if (!cap) return;
+
+      document.getElementById('leituraTag').textContent = cap.tag || 'TICCI TOBY';
+      document.getElementById('leituraTitulo').textContent = cap.titulo;
+      document.getElementById('leituraTexto').textContent = cap.texto;
+      document.getElementById('leituraTikTokLink').href = cap.link || 'http://www.youtube.com/watch?v=IYOvFlG4WRw';
+      document.getElementById('modalLeitura').style.display = 'flex';
+    }
+
+    function fecharModalLeitura() {
+      document.getElementById('modalLeitura').style.display = 'none';
+    }
+
+    function abrirModalNovoCapitulo() {
+      document.getElementById('modalNovoCapitulo').style.display = 'flex';
+    }
+
+    function fecharModalNovoCapitulo() {
+      document.getElementById('modalNovoCapitulo').style.display = 'none';
+      document.getElementById('formNovoCapitulo').reset();
+    }
+
+    function carregarCapitulosSalvos() {
+      const grid = document.getElementById('arquivosGrid');
+      const salvas = JSON.parse(localStorage.getItem(STORAGE_TOBY) || '[]');
+
+      salvas.forEach((cap, i) => {
+        const indexGlobal = capitulosFixos.length + i;
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+          <a href="${cap.link}" target="_blank" rel="noopener noreferrer" class="card-img-link">
+            <img src="${cap.capa || 'images (2).jpg'}" alt="" onerror="this.style.display='none'">
+            <div class="img-hover-overlay"><span>▶ Ver Vídeo</span></div>
+          </a>
+          <div class="product-info">
+            <h4>${cap.titulo}</h4>
+            <p class="product-desc">${cap.resumo}</p>
+            <div class="price-container">
+              <span class="price">📖 Capítulo Extra</span>
+            </div>
+            <div class="card-actions-group">
+              <button type="button" onclick="lerCapitulo(${indexGlobal})">Ler História</button>
+              <button type="button" class="btn-secondary" onclick="assistirVideo('${cap.titulo.replace(/'/g, "\\'")}', '${cap.link}')">Ver Vídeo</button>
+            </div>
+            <button type="button" class="btn-remover-custom" onclick="removerCapitulo(${i})">Remover Capítulo</button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function removerCapitulo(index) {
+      const salvas = JSON.parse(localStorage.getItem(STORAGE_TOBY) || '[]');
+      salvas.splice(index, 1);
+      localStorage.setItem(STORAGE_TOBY, JSON.stringify(salvas));
+      location.reload();
+    }
+
+    document.getElementById('formNovoCapitulo').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const novoCap = {
+        tag: 'TICCI TOBY • CAPÍTULO EXTRA',
+        titulo: document.getElementById('capTitulo').value.trim(),
+        resumo: document.getElementById('capResumo').value.trim(),
+        texto: document.getElementById('capTexto').value.trim(),
+        capa: document.getElementById('capCapa').value.trim(),
+        link: document.getElementById('capLink').value.trim()
+      };
+
+      const salvas = JSON.parse(localStorage.getItem(STORAGE_TOBY) || '[]');
+      salvas.push(novoCap);
+      localStorage.setItem(STORAGE_TOBY, JSON.stringify(salvas));
+
+      fecharModalNovoCapitulo();
+      location.reload();
+    });
+
+    document.addEventListener('DOMContentLoaded', carregarCapitulosSalvos);
+  </script>
+</body>
+</html>

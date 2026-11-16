@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-body: #08080c;
+  --surface: #12121b;
+  --surface-alt: #1a1a28;
+  --primary: #8b5cf6;
+  --primary-hover: #7c3aed;
+  --primary-dark: #5b21b6;
+  --emerald: #10b981;
+  --emerald-dark: #059669;
+  --crimson: #dc2626;
+  --crimson-hover: #b91c1c;
+  --warning: #d97706;
+  --warning-hover: #b45309;
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --border: #29263e;
+  --radius: 14px;
+  --shadow-md: 0 6px 22px rgba(0, 0, 0, 0.65);
+  --shadow-glow: 0 14px 32px rgba(0, 0, 0, 0.85), 0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08080c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e294e;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+body {
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.55;
+  background-image:
+    radial-gradient(circle at 12% 15%, rgba(139, 92, 246, 0.1) 0%, transparent 42%),
+    radial-gradient(circle at 88% 82%, rgba(16, 185, 129, 0.08) 0%, transparent 42%);
+}
+
+/* ==========================================================================
+   CABEÇALHO E NAVEGAÇÃO
+   ========================================================================== */
+header {
+  background-color: rgba(10, 10, 17, 0.94);
+  backdrop-filter: blur(12px);
+  color: #ffffff;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary);
+  background-color: #ffffff;
+  box-shadow: 0 0 14px rgba(139, 92, 246, 0.65);
+}
+
+header h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(139, 92, 246, 0.8), 2px 0 0 rgba(16, 185, 129, 0.45);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.94rem;
+  padding: 0.48rem 0.9rem;
+  border-radius: 8px;
+  transition: all 0.22s ease;
+}
+
+header nav a:hover,
+header nav a.active {
+  color: #ffffff;
+  background-color: rgba(139, 92, 246, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(139, 92, 246, 0.5);
+}
+
+header nav a.btn-sair:hover {
+  color: #fca5a5;
+  background-color: rgba(220, 38, 38, 0.22);
+  box-shadow: inset 0 0 0 1px rgba(220, 38, 38, 0.55);
+}
+
+/* ==========================================================================
+   BANNER PRINCIPAL (BOAS-VINDAS)
+   ========================================================================== */
+.hero-banner {
+  background: linear-gradient(135deg, #170e2c 0%, #09090f 55%, #071e17 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 4.2rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-tag {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 0.35rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.13);
+  color: var(--emerald);
+  border: 1px solid rgba(16, 185, 129, 0.38);
+  margin-bottom: 1rem;
+}
+
+.hero-banner h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 0.65rem;
+  background: linear-gradient(90deg, #ffffff 0%, #c4b5fd 52%, #6ee7b7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-banner p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 640px;
+  margin: 0 auto 1.65rem auto;
+}
+
+.hero-banner strong {
+  color: #c4b5fd;
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: 0.85rem 1.8rem;
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 9px;
+  border: 1px solid rgba(196, 181, 253, 0.3);
+  box-shadow: 0 6px 22px rgba(139, 92, 246, 0.42);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(139, 92, 246, 0.68);
+}
+
+/* ==========================================================================
+   CONTAINER E TÍTULO DE SEÇÃO
+   ========================================================================== */
+.container {
+  max-width: 1260px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  width: 100%;
+  flex: 1;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.85rem;
+  border-left: 4px solid var(--primary);
+  padding-left: 0.95rem;
+}
+
+.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.section-subtitle {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   GRID UNIFORME PARA OS 23 CARDS (4 COLUNAS POR LINHA)
+   ========================================================================== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.product-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-glow);
+}
+
+/* Destaque sutil no Card 23 (fechamento da coleção) */
+.product-card:nth-child(23) {
+  border-color: rgba(16, 185, 129, 0.45);
+}
+
+.product-card:nth-child(23):hover {
+  border-color: var(--emerald);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.85), 0 0 22px rgba(16, 185, 129, 0.3);
+}
+
+/* Badges */
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  background-color: var(--crimson);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.28rem 0.65rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.badge-purple {
+  background-color: var(--primary-dark);
+  border: 1px solid rgba(196, 181, 253, 0.25);
+}
+
+.badge-emerald {
+  background-color: var(--emerald-dark);
+  border: 1px solid rgba(110, 231, 183, 0.25);
+}
+
+/* Caixa da imagem clicável com altura idêntica nos 23 cards */
+.card-img-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 225px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, #151324 0%, #0b0b12 100%);
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: transparent;
+}
+
+.card-img-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.card-img-link img.img-focus-top {
+  object-position: top center;
+}
+
+.card-img-link img.img-emblem {
+  object-fit: contain;
+  padding: 1rem;
+  background: radial-gradient(circle, #ffffff 0%, #d4d4d8 100%);
+}
+
+.card-img-link:hover img {
+  transform: scale(1.07);
+}
+
+.img-hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 7, 20, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.img-hover-overlay span {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: #ffffff;
+  padding: 0.52rem 1.05rem;
+  border-radius: 8px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.65);
+}
+
+.card-img-link:hover .img-hover-overlay {
+  opacity: 1;
+}
+
+/* Conteúdo textual alinhado na base */
+.product-info {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.product-info h4 {
+  font-size: 1.04rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.45rem;
+}
+
+.product-desc {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  flex: 1;
+  line-height: 1.45;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.old-price {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--emerald);
+}
+
+.product-info button {
+  width: 100%;
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   FORMULÁRIOS (LOGIN, CADASTRO E PAINEL ADMIN)
+   ========================================================================== */
+.card {
+  background: var(--surface);
+  padding: 2.25rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.55rem;
+  color: #ffffff;
+  margin-bottom: 1.4rem;
+  font-weight: 700;
+}
+
+.form-subtitle {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-top: -0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #d1d5db;
+}
+
+input {
+  padding: 0.75rem 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #0b0b12;
+  color: var(--text-main);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input::placeholder {
+  color: #6b7280;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.25);
+}
+
+/* ==========================================================================
+   BOTÕES E LINKS
+   ========================================================================== */
+button {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: #ffffff;
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.94rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+  box-shadow: 0 0 16px rgba(139, 92, 246, 0.55);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.btn-danger {
+  background: var(--crimson);
+  border-color: rgba(220, 38, 38, 0.5);
+}
+
+.btn-danger:hover {
+  background: var(--crimson-hover);
+  box-shadow: 0 0 14px rgba(220, 38, 38, 0.45);
+}
+
+.btn-warning {
+  background: var(--warning);
+  border-color: rgba(217, 119, 6, 0.5);
+  color: #ffffff;
+}
+
+.btn-warning:hover {
+  background: var(--warning-hover);
+  box-shadow: 0 0 14px rgba(217, 119, 6, 0.45);
+}
+
+.link-redirect {
+  margin-top: 1.35rem;
+  display: block;
+  text-align: center;
+  color: #a78bfa;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.link-redirect:hover {
+  color: var(--emerald);
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   PAINEL ADMIN (BUSCA E TABELA)
+   ========================================================================== */
+.search-bar {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.search-bar input {
+  flex: 1;
+  min-width: 220px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+th, td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  background-color: var(--surface-alt);
+  font-weight: 600;
+  color: #c4b5fd;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.6px;
+}
+
+tr:hover td {
+  background-color: rgba(139, 92, 246, 0.07);
+}
+
+.actions-cell {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.actions-cell button {
+  padding: 0.45rem 0.8rem;
+  font-size: 0.82rem;
+}
+
+/* ==========================================================================
+   RODAPÉ E RESPONSIVIDADE
+   ========================================================================== */
+footer {
+  text-align: center;
+  padding: 1.45rem 5%;
+  background: #060609;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.86rem;
+  margin-top: auto;
+}
+
+footer strong {
+  color: var(--primary);
+}
+
+@media (max-width: 1120px) {
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  header {
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .hero-banner h2 {
+    font-size: 1.85rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}

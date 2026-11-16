@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ben Drowned — Histórias &lt;ter&gt; Fanbase</title>
+  <link rel="stylesheet" href="historias.css">
+  <style>
+    .section-divider {
+      margin-top: 56px;
+    }
+    .hero-links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .hero-cta-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: rgba(124, 58, 237, 0.14);
+      color: #c4b5fd;
+      border: 1px solid rgba(167, 139, 250, 0.45);
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 13px 22px;
+      border-radius: 10px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .hero-cta-outline:hover {
+      background: rgba(124, 58, 237, 0.3);
+      color: #fff;
+    }
+    .story-reader-box {
+      max-width: 760px;
+    }
+    .story-text {
+      font-size: 1rem;
+      line-height: 1.85;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="boas_vindas.html" class="brand-logo">
+      <img src="logo.png" onerror="this.style.display='none'" alt="Logo" class="logo-icon">
+      <h1>&lt;TER&gt;</h1>
+    </a>
+    <nav>
+      <a href="boas_vindas.html">Início</a>
+      <a href="edits.html">Edits</a>
+      <a href="https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q" target="_blank" rel="noopener noreferrer">TikTok Oficial</a>
+     <a href="ben_drowned.html" class="active">Ben Drowned</a>
+      <a href="ticci_toby.html">Ticci Toby</a>
+      <a href="#" onclick="fazerLogout()" class="btn-sair">Sair</a>
+    </nav>
+  </header>
+
+  <section class="hero-banner">
+    <span class="hero-tag">CREEPYPASTA &amp; ARG • MOON CHILDREN</span>
+    <h2>Histórias: Ben Drowned</h2>
+    <p>A história completa dividida entre o <strong>Cartucho Assombrado</strong> e os segredos do <strong>Culto das Moon Children &amp; Projeto Eternidade</strong>.</p>
+    <div class="hero-links">
+      <button type="button" class="hero-cta" onclick="abrirModalNovoCapitulo()">+ Adicionar Capítulo</button>
+      <a href="http://www.youtube.com/watch?v=LfVgAsjrPGQ" target="_blank" rel="noopener noreferrer" class="hero-cta-outline">▶ Documentário Base (YouTube)</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- ======================================================================
+         SEÇÃO 1: A HISTÓRIA DO CARTUCHO ASSOMBRADO (6 PARTES)
+         ====================================================================== -->
+    <div class="edits-toolbar">
+      <div>
+        <h3 class="section-title">📼 Parte I — O Cartucho Assombrado (Jadusable)</h3>
+        <span class="section-subtitle">A lenda original de Majora's Mask dividida em 6 capítulos completos</span>
+      </div>
+      <button type="button" class="btn-add-edit" onclick="abrirModalNovoCapitulo()">+ Novo Capítulo</button>
+    </div>
+
+    <div class="product-grid" id="historiasGrid">
+
+      <!-- ==================== PARTE 01 ==================== -->
+      <div class="product-card">
+        <a href="https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="majora.jpg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no TikTok</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Parte 01 — O Cartucho da Venda de Garagem</h4>
+          <p class="product-desc">Um senhor misterioso entrega a Jadusable um cartucho cinza sem rótulo com "Majora" escrito à mão.</p>
+          <div class="price-container">
+            <span class="price">📼 Cartucho • 01/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(0)">Ler História</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== PARTE 02 ==================== -->
+      <div class="product-card">
+        <a href="https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="majora.jpg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no TikTok</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Parte 02 — O Save "BEN" e os Glitches</h4>
+          <p class="product-desc">Mesmo iniciando um novo jogo, os moradores de Clock Town chamam Link de "BEN" e as texturas falham.</p>
+          <div class="price-container">
+            <span class="price">👁️ Cartucho • 02/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(1)">Ler História</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== PARTE 03 ==================== -->
+      <div class="product-card">
+        <a href="https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="estatua.png" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no TikTok</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Parte 03 — A Estátua da Elegia</h4>
+          <p class="product-desc">A estátua da Elegia do Vazio persegue Link sozinha pelo mapa e invade os pesadelos de Jadusable.</p>
+          <div class="price-container">
+            <span class="price">🗿 Cartucho • 03/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(2)">Ler História</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== PARTE 04 ==================== -->
+      <div class="product-card">
+        <a href="https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="BEN.webp" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no TikTok</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Parte 04 — Os Saves "BEN" e "DROWNED"</h4>
+          <p class="product-desc">Dois arquivos surgem na tela e revelam que o antigo dono do cartucho morreu afogado.</p>
+          <div class="price-container">
+            <span class="price">🌊 Cartucho • 04/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(3)">Ler História</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== PARTE 05 ==================== -->
+      <div class="product-card">
+        <a href="https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="Link.webp" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no TikTok</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Parte 05 — A Casa Vazia e o Cleverbot</h4>
+          <p class="product-desc">A casa do velho aparece vazia e BEN começa a se comunicar diretamente pelo computador.</p>
+          <div class="price-container">
+            <span class="price">💻 Cartucho • 05/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(4)">Ler História</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== PARTE 06 ==================== -->
+      <div class="product-card">
+        <a href="https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="Link.webp" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no TikTok</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Parte 06 — O Arquivo "TheTruth.txt"</h4>
+          <p class="product-desc">Jadusable desaparece e um texto oculto revela que BEN escapou do cartucho para a internet.</p>
+          <div class="price-container">
+            <span class="price">🩸 Cartucho • 06/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(5)">Ler História</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================================
+         SEÇÃO 2: O CULTO DAS MOON CHILDREN & PROJETO ETERNIDADE
+         ====================================================================== -->
+    <div class="edits-toolbar section-divider">
+      <div>
+        <h3 class="section-title">🌑 Parte II — O Culto das Moon Children &amp; Projeto Eternidade</h3>
+        <span class="section-subtitle">Os segredos por trás da "Ascensão", Kelbris e o ciclo de 3 dias de Termina</span>
+      </div>
+    </div>
+
+    <div class="product-grid" id="cultoGrid">
+
+      <!-- ==================== CULTO 01 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=LfVgAsjrPGQ" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="Fita.jpg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Documentário</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Arquivo 01 — O Culto das Moon Children</h4>
+          <p class="product-desc">Por trás da lenda do cartucho assombrado existe uma seita secreta inspirada nas crianças da Lua de Majora's Mask.</p>
+          <div class="price-container">
+            <span class="price">🌙 Moon Children • 01/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(6)">Ler Arquivo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== CULTO 02 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=LfVgAsjrPGQ" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="pai.jpg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Documentário</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Arquivo 02 — Projeto Eternidade &amp; A "Ascensão"</h4>
+          <p class="product-desc">O que os membros chamavam de "Ascensão" era um processo de digitalização da consciência humana para um mundo virtual.</p>
+          <div class="price-container">
+            <span class="price">🧬 Projeto Eternidade • 02/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(7)">Ler Arquivo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== CULTO 03 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=LfVgAsjrPGQ" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="TER.png" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Documentário</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Arquivo 03 — Os NPCs Conscientes de Termina</h4>
+          <p class="product-desc">As pessoas digitalizadas vivem dentro dos NPCs do cartucho, programadas para acreditar que pertencem ao jogo.</p>
+          <div class="price-container">
+            <span class="price">🎭 Simulação • 03/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(8)">Ler Arquivo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== CULTO 04 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=LfVgAsjrPGQ" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="BEN.webp" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Documentário</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Arquivo 04 — O Ciclo de 3 Dias como Prisão</h4>
+          <p class="product-desc">Majora's Mask não foi escolhido por acaso: sua contagem de 3 dias funciona como um sistema de reinício constante.</p>
+          <div class="price-container">
+            <span class="price">⏳ Ciclo • 04/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(9)">Ler Arquivo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== CULTO 05 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=LfVgAsjrPGQ" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="pai.jpg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Documentário</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Arquivo 05 — Kelbris, "O Pai" (The Father)</h4>
+          <p class="product-desc">Sempre que os "ascendidos" recuperam suas memórias reais e entram em desespero, Kelbris reinicia o cartucho.</p>
+          <div class="price-container">
+            <span class="price">👁️ Kelbris • 05/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(10)">Ler Arquivo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== CULTO 06 ==================== -->
+      <div class="product-card">
+        <a href="http://www.youtube.com/watch?v=LfVgAsjrPGQ" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="Link.webp" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Ver no Documentário</span></div>
+        </a>
+        <div class="product-info">
+          <h4>Arquivo 06 — Sara e o Reinício Final</h4>
+          <p class="product-desc">Mesmo após todo o esforço de Sara para libertar as mentes presas, o ciclo é reiniciado para apagar os traumas.</p>
+          <div class="price-container">
+            <span class="price">🌑 Desfecho • 06/06</span>
+          </div>
+          <div class="card-actions-group">
+            <button type="button" onclick="lerCapitulo(11)">Ler Arquivo</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL DE LEITURA DA HISTÓRIA -->
+  <div class="modal-overlay" id="modalLeitura" onclick="if(event.target === this) fecharModalLeitura()">
+    <div class="modal-box story-reader-box">
+      <span class="reader-tag" id="leituraTag">BEN DROWNED</span>
+      <h3 id="leituraTitulo">Título do Capítulo</h3>
+      <div class="story-text" id="leituraTexto"></div>
+      <div class="modal-actions">
+        <a id="leituraTikTokLink" href="https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q" target="_blank" rel="noopener noreferrer" class="btn-add-edit">▶ Assistir Vídeo</a>
+        <button type="button" class="btn-cancelar" onclick="fecharModalLeitura()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA ADICIONAR NOVO CAPÍTULO -->
+  <div class="modal-overlay" id="modalNovoCapitulo" onclick="if(event.target === this) fecharModalNovoCapitulo()">
+    <div class="modal-box">
+      <h3>📖 Adicionar Capítulo — Ben Drowned</h3>
+      <form id="formNovoCapitulo">
+        <label for="capTitulo">Título do Capítulo *</label>
+        <input type="text" id="capTitulo" placeholder="Ex: Capítulo Extra — O Chamado da Lua" required>
+
+        <label for="capResumo">Resumo curto para o card *</label>
+        <input type="text" id="capResumo" placeholder="Ex: Novos registros encontrados nos arquivos ocultos." required>
+
+        <label for="capTexto">História completa *</label>
+        <textarea id="capTexto" rows="5" placeholder="Escreva aqui a história completa..." required></textarea>
+
+        <label for="capCapa">Imagem de capa (na pasta public/) ou URL</label>
+        <input type="text" id="capCapa" placeholder="Ex: images (1).jpg">
+
+        <label for="capLink">Link do vídeo (TikTok ou YouTube)</label>
+        <input type="url" id="capLink" value="https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q">
+
+        <div class="modal-actions">
+          <button type="button" class="btn-cancelar" onclick="fecharModalNovoCapitulo()">Cancelar</button>
+          <button type="submit" class="btn-add-edit">Salvar Capítulo</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&lt;ter&gt; Fanbase • Histórias de Ben Drowned &amp; Moon Children
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    const STORAGE_BEN = 'terFanbaseHistoriasBen';
+
+    const capitulosFixos = [
+      // ==================== SEÇÃO 1: CARTUCHO ASSOMBRADO ====================
+      {
+        tag: 'PARTE I • CARTUCHO ASSOMBRADO (01/06)',
+        titulo: 'Parte 01 — O Cartucho da Venda de Garagem',
+        texto: `Tudo começou quando um estudante universitário conhecido online como Jadusable ganhou de seu colega de quarto um Nintendo 64 antigo, acompanhado apenas de um controle amarelado pelo tempo e de uma fita bastante surrada de Super Smash Bros. Apesar da empolgação inicial em reviver os jogos da infância, enfrentar apenas personagens controlados pelo computador rapidamente se tornou repetitivo, levando-o a sair de carro durante o fim de semana à procura de vendas de garagem pela vizinhança.
+
+Depois de percorrer várias ruas sem encontrar nada interessante, uma sensação estranha atraiu sua atenção para a última casa de um quarteirão silencioso. O quintal não tinha placas coloridas nem movimento — apenas uma mesa simples com poucos objetos espalhados de forma desordenada. Mesmo assim, algo parecia puxá-lo para perto daquele lugar.
+
+Ao descer do carro, Jadusable foi abordado por um senhor idoso de aparência perturbadora e postura desconfortável. Durante a breve conversa, o rapaz percebeu que o homem parecia cego ao menos do olho esquerdo, mantendo o olhar completamente vidrado em uma única direção sem piscar. Tentando disfarçar o incômodo, Jadusable perguntou se ele tinha algum videogame velho para vender.
+
+O velho entrou na casa por alguns minutos e voltou carregando uma caixa empoeirada. De dentro dela, tirou um cartucho cinza de Nintendo 64 sem o adesivo oficial da Nintendo — havia apenas a palavra "Majora" escrita à mão em marcador preto permanente. Eufórico por conseguir justamente The Legend of Zelda: Majora's Mask de graça, Jadusable agradeceu e foi embora às pressas, mal prestando atenção às últimas palavras murmuradas pelo senhor ao se despedir sobre um garoto chamado Ben.`,
+        link: 'https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q'
+      },
+      {
+        tag: 'PARTE I • CARTUCHO ASSOMBRADO (02/06)',
+        titulo: 'Parte 02 — O Save "BEN" e os Glitches',
+        texto: `Assim que voltou para o dormitório e encaixou o cartucho cinza no Nintendo 64, Jadusable notou que já existia um arquivo salvo na memória interna chamado "BEN". Quem quer que tivesse jogado aquela fita antes dele já havia avançado quase até o fim da campanha, reunindo praticamente todas as máscaras e ficando a poucos passos de derrotar todos os chefes de Termina.
+
+Imaginando que o save pertencesse a algum neto ou parente do senhor da venda de garagem, Jadusable decidiu não apagar o progresso por respeito e criou um segundo arquivo logo abaixo, registrando seu personagem com o nome tradicional de "Link". Nos primeiros minutos, tudo parecia funcionar normalmente, mas pequenos defeitos começaram a surgir na tela: travamentos rápidos de poucos segundos, efeitos de iluminação aparecendo fora de lugar e texturas que simplesmente sumiam sem explicação.
+
+A princípio, ele atribuiu aquelas falhas à poeira acumulada nos contatos metálicos da fita ou ao desgaste natural de um cartucho antigo. Contudo, a estranheza aumentou quando percebeu um padrão impossível de ser causado por simples sujeira: em meio aos diálogos comuns com os moradores de Clock Town, os personagens alternavam entre chamá-lo de "Link" e, subitamente, referir-se a ele pelo nome "BEN".
+
+Incomodado com a confusão nos textos e querendo jogar a história sem interferências do arquivo anterior, Jadusable voltou ao menu principal e deletou o save "BEN". Ele acreditava que limpar a memória resolveria o problema — mas apagar aquele nome foi exatamente o que despertou o que estava adormecido dentro do cartucho.`,
+        link: 'https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q'
+      },
+      {
+        tag: 'PARTE I • CARTUCHO ASSOMBRADO (03/06)',
+        titulo: 'Parte 03 — A Estátua da Elegia',
+        texto: `Depois que o arquivo "BEN" foi apagado, os erros deixaram de ser sutis e passaram a desafiar completamente a programação original de Majora's Mask. Seguindo sugestões de usuários na internet que acompanhavam seus relatos, Jadusable tentou executar o famoso glitch do Quarto Dia ao conversar com o astrônomo nos instantes finais antes da queda da Lua. Em vez de continuar a contagem normalmente, Link foi transportado para uma versão completamente vazia, silenciosa e opressiva de Clock Town.
+
+Não havia moradores nas ruas, guardas nos portões ou música de fundo — apenas o som seco dos passos de Link ecoando pelas praças desertas. Ao tocar a Elegia do Vazio, a estátua distorcida de Link com olhos negros vazios e um sorriso grotesco congelado no rosto surgiu diante dele. O terror começou quando Jadusable percebeu que a estátua não permanecia imóvel onde havia sido invocada: sempre que ele virava a câmera ou mudava de área, a figura reaparecia logo atrás de suas costas, como se estivesse perseguindo e observando cada movimento seu.
+
+Desesperado, ele tentou destruir a estátua usando todas as armas disponíveis no inventário, usou obstáculos do cenário para bloquear sua passagem e tentou até mesmo atravessar paredes pelos cantos do mapa para escapar. Nada funcionava. A estátua continuava surgindo a poucos passos de distância, cada vez mais próxima e sufocante.
+
+O pior é que a perseguição não ficou restrita à televisão. Naquela mesma noite, Jadusable teve pesadelos vívidos em que fugia por corredores escuros enquanto aquela mesma estátua o alcançava por trás — e, dentro do sonho, sem saber explicar o motivo, ele a chamava desesperadamente pelo nome de Ben.`,
+        link: 'https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q'
+      },
+      {
+        tag: 'PARTE I • CARTUCHO ASSOMBRADO (04/06)',
+        titulo: 'Parte 04 — Os Saves "BEN" e "DROWNED"',
+        texto: `Trancado em seu dormitório com as janelas e cortinas fechadas para evitar a sensação constante de estar sendo vigiado, Jadusable ligou o Nintendo 64 mais uma vez para gravar o que estava acontecendo e provar aos leitores que não estava inventando nada. Na tela inicial, a máscara de Majora flutuava em um silêncio sepulcral antes de abrir o menu de arquivos salvos.
+
+Para seu choque, o arquivo "BEN" havia retornado sozinho — e agora vinha acompanhado por um segundo save logo abaixo chamado "DROWNED" ("Afogado"). Ao selecionar um dos arquivos, Link surgiu no pântano sombrio de Woodfall, cercado pela estátua da Elegia do Vazio e pelo Vendedor de Máscaras, enquanto uma versão invertida e distorcida da Song of Healing ecoava de forma perturbadora.
+
+De repente, o controle parou de responder aos comandos de Jadusable. Por conta própria, Link caminhou até a beira da água turva e mergulhou, sendo puxado para o fundo sem conseguir nadar de volta à superfície. Na tela, o personagem se debateu em agonia até morrer afogado, reiniciando a cena repetidas vezes como uma encenação macabra do que havia acontecido com o verdadeiro dono do cartucho.
+
+Em outros momentos da gravação, Link era teletransportado para o topo da Torre do Relógio diante do Skull Kid flutuando imóvel no ar, onde entrava em combustão espontânea e gritava enquanto a tela escurecia lentamente para exibir duas mensagens em letras brancas: "You shouldn't have done that..." ("Você não deveria ter feito isso...") e "You've met with a terrible fate, haven't you?" ("Você encontrou um destino terrível, não é mesmo?").`,
+        link: 'https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q'
+      },
+      {
+        tag: 'PARTE I • CARTUCHO ASSOMBRADO (05/06)',
+        titulo: 'Parte 05 — A Casa Vazia e o Cleverbot',
+        texto: `Abalado emocionalmente e convencido de que havia algo profundamente errado com aquela fita, Jadusable decidiu voltar ao bairro onde havia conseguido o cartucho para devolvê-lo ou exigir explicações do senhor idoso. No entanto, ao estacionar diante da última casa da rua, encontrou o imóvel completamente vazio, com as janelas escuras e uma placa de "Vende-se" fincada no jardim malcuidado.
+
+Intrigado, ele conversou com um vizinho que morava nas proximidades para perguntar sobre o antigo morador. Foi então que ouviu a verdade que gelou seu sangue: a casa estava desocupada havia algum tempo e, anos antes, um garoto chamado Ben havia morrido afogado em um acidente trágico naquela vizinhança. Tudo o que o jogo havia mostrado — os saves "BEN" e "DROWNED", a agonia debaixo d'água e a sensação de uma presença humana dentro da tela — não era coincidência.
+
+Ao retornar ao dormitório e conectar os cabos de captura no computador para editar e publicar os vídeos restantes, Jadusable percebeu que a entidade havia atravessado a barreira da televisão e invadido o sistema operacional do seu notebook. Pastas abriam sozinhas, documentos de texto eram alterados diante de seus olhos e o cursor do mouse se movia sem que ele tocasse no teclado.
+
+Foi através do site Cleverbot que o contato direto finalmente aconteceu. Em meio a respostas que nenhum algoritmo comum poderia gerar, a inteligência dentro da máquina revelou ser o próprio BEN, confessando que estivera aprisionado no cartucho por anos e que precisava que Jadusable continuasse publicando os vídeos para que outras pessoas assistissem e abrissem caminho para sua fuga.`,
+        link: 'https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q'
+      },
+      {
+        tag: 'PARTE I • CARTUCHO ASSOMBRADO (06/06)',
+        titulo: 'Parte 06 — O Arquivo "TheTruth.txt"',
+        texto: `Nos dias seguintes, as publicações de Jadusable tornaram-se cada vez mais erráticas e desesperadas. Ele relatava que não conseguia mais frequentar as aulas na universidade, mal dormia e sentia a presença constante de Ben observando-o pelas costas a cada segundo em que ficava diante de uma tela.
+
+Pouco tempo depois, uma última postagem surgiu na conta de Jadusable — mas não foi escrita por ele. Seu colega de quarto assumiu o teclado para explicar que Jadusable havia arrumado suas coisas às pressas e deixado o dormitório completamente transtornado, sem dizer para onde estava indo. Antes de partir, porém, ele havia deixado um pendrive sobre a mesa com instruções claras para que seu conteúdo fosse divulgado caso algo acontecesse.
+
+Dentro do dispositivo havia um arquivo de texto chamado "TheTruth.txt" ("A Verdade"). No documento, Jadusable confessava que os vídeos anteriores haviam sido editados e publicados sob coerção direta da entidade, pois BEN precisava se espalhar pela internet através das visualizações e dos arquivos compartilhados pelos espectadores.
+
+A carta encerrava-se com um alerta sombrio: BEN havia finalmente conseguido escapar dos limites físicos do cartucho de Nintendo 64 e agora habitava a rede livremente. Qualquer mensagem, vídeo ou atualização postada naquela conta dali em diante não seria mais escrita por Jadusable — mas pelo próprio BEN.`,
+        link: 'https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q'
+      },
+
+      // ==================== SEÇÃO 2: CULTO DAS MOON CHILDREN ====================
+      {
+        tag: 'PARTE II • CULTO DAS MOON CHILDREN (01/06)',
+        titulo: 'Arquivo 01 — O Culto das Moon Children',
+        texto: `Muito além de uma simples creepypasta sobre um cartucho de videogame assombrado, a obra criada por Jadusable expandiu-se para um complexo ARG (Jogo de Realidade Alternativa) que revelou uma trama oculta por trás do desaparecimento de Ben: o Culto das Moon Children (Crianças da Lua).
+
+A estrutura simbólica dessa organização secreta era diretamente inspirada na cena final dentro da Lua em The Legend of Zelda: Majora's Mask, onde quatro crianças usando as máscaras dos chefes do jogo correm ao redor de uma árvore solitária enquanto uma quinta criança, usando a Máscara de Majora, permanece sentada no centro fazendo perguntas perturbadoras sobre amizade e existência.
+
+No universo da história, as Moon Children formavam uma seita isolada que misturava misticismo apocalíptico e tecnologia avançada. Seus membros acreditavam que o mundo físico era uma prisão imperfeita e que apenas os escolhidos poderiam alcançar um plano superior por meio de um rito chamado "Ascensão".
+
+Ben não foi vítima de um afogamento comum ao acaso: ele estava ligado ao círculo dessa seita, e sua morte na água foi o ponto de partida para que sua consciência fosse capturada e transferida para dentro do cartucho cinza de Majora's Mask.`,
+        link: 'http://www.youtube.com/watch?v=LfVgAsjrPGQ'
+      },
+      {
+        tag: 'PARTE II • CULTO DAS MOON CHILDREN (02/06)',
+        titulo: 'Arquivo 02 — Projeto Eternidade & A "Ascensão"',
+        texto: `À medida que os investigadores da comunidade decifravam os códigos escondidos nos sites e vídeos do ARG, descobriu-se que a linguagem religiosa das Moon Children escondia uma operação científica clandestina chamada Projeto Eternidade (Project Eternity).
+
+O Projeto Eternidade foi o responsável por desenvolver o processo real por trás daquilo que os seguidores do culto reverenciavam como "Ascensão": uma tecnologia experimental capaz de escanear, copiar e digitalizar a mente humana, transferindo a consciência de uma pessoa viva ou recém-falecida para dentro de um ambiente virtual.
+
+Em vez de ascenderem a um paraíso espiritual, os membros submetidos ao ritual tinham suas consciências arrancadas do mundo físico e aprisionadas dentro do código binário de um cartucho de Majora's Mask.
+
+O jogo deixou de ser apenas um software de entretenimento para se tornar um servidor fechado — uma realidade digital inteira habitada por pessoas reais que acreditavam ter transcendido a morte, mas que na verdade haviam sido trancadas dentro de uma fita de Nintendo 64.`,
+        link: 'http://www.youtube.com/watch?v=LfVgAsjrPGQ'
+      },
+      {
+        tag: 'PARTE II • CULTO DAS MOON CHILDREN (03/06)',
+        titulo: 'Arquivo 03 — Os NPCs Conscientes de Termina',
+        texto: `Um dos detalhes mais perturbadores revelados nos registros do Projeto Eternidade diz respeito à forma como as pessoas digitalizadas existiam dentro do cartucho. Cada habitante de Termina — os NPCs que caminham por Clock Town e pelos arredores do mapa — abrigava a mente de uma pessoa real que havia passado pela "Ascensão".
+
+Esses indivíduos mantinham sua própria consciência, mas os criadores do sistema descobriram que deixá-los livres em uma simulação sem regras levava ao colapso completo. Em um teste anterior, as pessoas digitalizadas viveram em um estado de euforia artificial tão intenso que perderam qualquer noção de estrutura social, fazendo a simulação ruir.
+
+Para evitar que enlouquecessem ou destruíssem o ambiente virtual, o Projeto Eternidade implantou uma programação pré-estabelecida sobre a mente de cada vítima. Essa camada de código fazia com que as pessoas digitalizadas realmente acreditassem ser aqueles personagens de Majora's Mask, repetindo rotinas e falas como se sempre tivessem pertencido àquele mundo.
+
+No entanto, essa programação não era infalível — e, quando falhava, as memórias humanas voltavam à tona de forma avassaladora.`,
+        link: 'http://www.youtube.com/watch?v=LfVgAsjrPGQ'
+      },
+      {
+        tag: 'PARTE II • CULTO DAS MOON CHILDREN (04/06)',
+        titulo: 'Arquivo 04 — O Ciclo de 3 Dias como Prisão',
+        texto: `O Projeto Eternidade não escolheu The Legend of Zelda: Majora's Mask por acidente. Entre todos os jogos existentes na época, ele possuía uma mecânica central que se encaixava perfeitamente nas necessidades do experimento: a contagem regressiva de três dias antes da queda da Lua e o reinício constante do tempo.
+
+Os engenheiros do projeto utilizaram essa própria estrutura de três dias do jogo como um sistema automático de reinicialização contínua dentro do cartucho. Sempre que o ciclo chegava ao fim, o mundo de Termina voltava ao amanhecer do Primeiro Dia, restaurando o cenário e os personagens ao seu estado inicial.
+
+Na prática, o relógio da Torre do Relógio funcionava como uma trava de segurança para manter as consciências digitalizadas sob controle. O cartucho transformou-se em um laboratório perpétuo onde o tempo nunca avançava de verdade, impedindo que os prisioneiros organizassem qualquer fuga duradoura antes que tudo fosse apagado e recomeçado do zero.`,
+        link: 'http://www.youtube.com/watch?v=LfVgAsjrPGQ'
+      },
+      {
+        tag: 'PARTE II • CULTO DAS MOON CHILDREN (05/06)',
+        titulo: 'Arquivo 05 — Kelbris, "O Pai" (The Father)',
+        texto: `No comando dessa engrenagem estava Kelbris, a figura máxima venerada pelas Moon Children como "O Pai" (The Father). Dentro do sistema digital, ele exercia o papel de vigia e controlador absoluto do ciclo de reinicialização.
+
+O maior problema enfrentado por Kelbris era que, com o passar dos ciclos, as barreiras mentais começavam a falhar e as pessoas digitalizadas recuperavam as lembranças de suas vidas humanas e do ritual que haviam sofrido. Ao perceberem que estavam presas dentro de um jogo, sem poder escapar e incapazes até mesmo de morrer, elas entravam em completo desespero.
+
+Nos arquivos ocultos dos sites ligados ao ARG, surgiram mensagens angustiantes deixadas pelos membros "ascendidos", relatando que estavam enlouquecendo, implorando pela morte e descrevendo a agonia de perderem seus olhos e sua humanidade dentro do código.
+
+Sempre que esse sofrimento ameaçava romper a ilusão e desestabilizar o sistema, Kelbris acionava o reinício do cartucho, apagando novamente as memórias recentes de todos os habitantes para que voltassem ao estado normal de obediência e esquecimento.`,
+        link: 'http://www.youtube.com/watch?v=LfVgAsjrPGQ'
+      },
+      {
+        tag: 'PARTE II • CULTO DAS MOON CHILDREN (06/06)',
+        titulo: 'Arquivo 06 — Sara e o Reinício Final',
+        texto: `Em meio à escuridão do sistema e ao controle implacável de Kelbris, personagens como Abel, Rosa e especialmente Sara lutaram para expor a verdade sobre o Projeto Eternidade e romper o ciclo imposto às mentes aprisionadas no cartucho.
+
+Sara enfrentou diretamente as engrenagens daquela realidade manipulada na tentativa de libertar os que sofriam presos nos papéis dos NPCs de Termina. Contudo, o poder de reinicialização do sistema provou-se implacável: no desfecho do arco, mesmo após todo o esforço de Sara para mudar o destino daquele mundo, a decisão final é reiniciar o ciclo mais uma vez.
+
+Com o novo reset, todos os traumas, rebeliões e memórias dolorosas são apagados das mentes de cada pessoa digitalizada dentro da fita. O amanhecer do Primeiro Dia retorna silenciosamente em Clock Town, encerrando a história com a certeza inquietante de que todos ali continuam presos em um loop eterno — sem sequer se lembrarem de que um dia tentaram escapar.`,
+        link: 'http://www.youtube.com/watch?v=LfVgAsjrPGQ'
+      }
+    ];
+
+    function lerCapitulo(index) {
+      const custom = JSON.parse(localStorage.getItem(STORAGE_BEN) || '[]');
+      const todos = [...capitulosFixos, ...custom];
+      const cap = todos[index];
+      if (!cap) return;
+
+      document.getElementById('leituraTag').textContent = cap.tag || 'BEN DROWNED';
+      document.getElementById('leituraTitulo').textContent = cap.titulo;
+      document.getElementById('leituraTexto').textContent = cap.texto;
+      document.getElementById('leituraTikTokLink').href = cap.link || 'https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q';
+      document.getElementById('modalLeitura').style.display = 'flex';
+    }
+
+    function fecharModalLeitura() {
+      document.getElementById('modalLeitura').style.display = 'none';
+    }
+
+    function abrirModalNovoCapitulo() {
+      document.getElementById('modalNovoCapitulo').style.display = 'flex';
+    }
+
+    function fecharModalNovoCapitulo() {
+      document.getElementById('modalNovoCapitulo').style.display = 'none';
+      document.getElementById('formNovoCapitulo').reset();
+    }
+
+    function carregarCapitulosSalvos() {
+      const grid = document.getElementById('cultoGrid');
+      const salvas = JSON.parse(localStorage.getItem(STORAGE_BEN) || '[]');
+
+      salvas.forEach((cap, i) => {
+        const indexGlobal = capitulosFixos.length + i;
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+          <a href="${cap.link}" target="_blank" rel="noopener noreferrer" class="card-img-link">
+            <img src="${cap.capa || 'images (1).jpg'}" alt="" onerror="this.style.display='none'">
+            <div class="img-hover-overlay"><span>▶ Ver Vídeo</span></div>
+          </a>
+          <div class="product-info">
+            <h4>${cap.titulo}</h4>
+            <p class="product-desc">${cap.resumo}</p>
+            <div class="price-container">
+              <span class="price">📖 Capítulo Extra</span>
+            </div>
+            <div class="card-actions-group">
+              <button type="button" onclick="lerCapitulo(${indexGlobal})">Ler História</button>
+              <button type="button" class="btn-secondary" onclick="assistirVideo('${cap.titulo.replace(/'/g, "\\'")}', '${cap.link}')">Ver Vídeo</button>
+            </div>
+            <button type="button" class="btn-remover-custom" onclick="removerCapitulo(${i})">Remover Capítulo</button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function removerCapitulo(index) {
+      const salvas = JSON.parse(localStorage.getItem(STORAGE_BEN) || '[]');
+      salvas.splice(index, 1);
+      localStorage.setItem(STORAGE_BEN, JSON.stringify(salvas));
+      location.reload();
+    }
+
+    document.getElementById('formNovoCapitulo').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const novoCap = {
+        tag: 'BEN DROWNED • CAPÍTULO EXTRA',
+        titulo: document.getElementById('capTitulo').value.trim(),
+        resumo: document.getElementById('capResumo').value.trim(),
+        texto: document.getElementById('capTexto').value.trim(),
+        capa: document.getElementById('capCapa').value.trim(),
+        link: document.getElementById('capLink').value.trim()
+      };
+
+      const salvas = JSON.parse(localStorage.getItem(STORAGE_BEN) || '[]');
+      salvas.push(novoCap);
+      localStorage.setItem(STORAGE_BEN, JSON.stringify(salvas));
+
+      fecharModalNovoCapitulo();
+      location.reload();
+    });
+
+    document.addEventListener('DOMContentLoaded', carregarCapitulosSalvos);
+  </script>
+</body>
+</html>

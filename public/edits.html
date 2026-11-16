@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edits — &lt;TER&gt; Fanbase</title>
+  <link rel="stylesheet" href="edits.css">
+</head>
+<body>
+  <header>
+    <a href="boas_vindas.html" class="brand-logo">
+      <img src="logo.png" onerror="this.style.display='none'" alt="Logo" class="logo-icon">
+      <h1>&lt;TER&gt;</h1>
+    </a>
+    <nav>
+      <a href="boas_vindas.html">Início</a>
+      <a href="edits.html" class="active">Edits</a>
+      <a href="https://www.tiktok.com/@kailtern?_r=1&_t=ZS-9BLgYPKRw1Q" target="_blank" rel="noopener noreferrer">TikTok Oficial</a>
+      <a href="ben_drowned.html">Ben Drowned</a>
+      <a href="ticci_toby.html">Ticci Toby</a>
+      <a href="admin.html" id="navAdminLink">Painel Admin</a>
+      <a href="#" onclick="fazerLogout()" class="btn-sair">Sair</a>
+    </nav>
+  </header>
+
+  <section class="hero-banner">
+    <span class="hero-tag">EDITS &amp; VELOCITY • KAILTERN</span>
+    <h2>Galeria de Edits &lt;TER&gt;</h2>
+    <p>Coleção especial de edits <strong>Kailtern</strong>.</p>
+    <button type="button" class="hero-cta" onclick="abrirModalEdit()">+ Adicionar Nova Edit</button>
+  </section>
+
+  <div class="container">
+    <div class="edits-toolbar">
+      <div>
+        <h3 class="section-title">🎬 Edits</h3>
+        <span class="section-subtitle">Clique nas fotos ou nos botões para assistir no TikTok</span>
+      </div>
+      <button type="button" class="btn-add-edit" onclick="abrirModalEdit()">+ Nova Edit</button>
+    </div>
+
+    <div class="product-grid" id="editsGrid">
+
+      <!-- ==================== EDIT 01 ==================== -->
+      <div class="product-card">
+        <a href="https://vt.tiktok.com/ZSpsBu6sE/" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="arte1.jpg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Assistir Edit</span></div>
+        </a>
+        <div class="product-info">
+        <p class="product-desc">Áudio: Swimming Pools (Drank)- Kendrick Lamar
+<br>
+          Arte: Por MAMUNCHES </p>
+        </div>
+      </div>
+
+      <!-- ==================== EDIT 02 ==================== -->
+      <div class="product-card">
+        <a href="https://vt.tiktok.com/ZSpsBtft5/" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="arte6.jpeg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Assistir Edit</span></div>
+        </a>
+        <div class="product-info">
+        <p class="product-desc">Áudio: Confidence Kim (FR)
+         <br>
+          Arte: por blondigrl
+        </p>
+        </div>
+      </div>
+
+      <!-- ==================== EDIT 03 ==================== -->
+      <div class="product-card">
+        <a href="https://vt.tiktok.com/ZSpsBH7BT/" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="arte2.png" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Assistir Edit</span></div>
+        </a>
+        <div class="product-info">
+          <p class="product-desc">Áudio: Raindance (feat. Tems) Dave
+<br>
+            Arte: Por PinkHalley
+
+          </p>
+        </div>
+      </div>
+
+      <!-- ==================== EDIT 04 ==================== -->
+      <div class="product-card">
+        <a href="https://vt.tiktok.com/ZSpsBqFRj/" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="arte 5.jpeg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Assistir Edit</span></div>
+        </a>
+        <div class="product-info">
+          <p class="product-desc">Áudio: She looks just like a dream (Something About You) (Lyrics) ft. Dent May
+<br>
+            Arte: por blondigrl
+          </p>
+        </div>
+      </div>
+
+      <!-- ==================== EDIT 05 ==================== -->
+      <div class="product-card">
+        <a href="https://vt.tiktok.com/ZSpsBTrGD/" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="arte 4.jpeg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Assistir Edit</span></div>
+        </a>
+        <div class="product-info">
+          <p class="product-desc">Áudio: The Neighbourhood - Sweater Weather
+<br>
+            Arte: por blondigrl
+          </p>
+        </div>
+      </div>
+
+      <!-- ==================== EDIT 06 ==================== -->
+      <div class="product-card">
+        <a href="https://vt.tiktok.com/ZSpsBXWNa/" target="_blank" rel="noopener noreferrer" class="card-img-link">
+          <img src="arte3.jpeg" alt="" onerror="this.style.display='none'">
+          <div class="img-hover-overlay"><span>▶ Assistir Edit</span></div>
+        </a>
+        <div class="product-info">
+          <p class="product-desc">Áudio: Mina do Condomínio - Seu Jorge 
+<br>
+            Arte: por blondigrl
+          </p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <!-- MODAL PARA ADICIONAR NOVA EDIT -->
+  <div class="modal-overlay" id="modalEdit">
+    <div class="modal-box">
+      <h3>🎬 Adicionar Nova Edit</h3>
+      <form id="formNovaEdit">
+        <label for="editTitulo">Título da Edit *</label>
+        <input type="text" id="editTitulo" placeholder="Ex: BEN Drowned — Edit Sombria" required>
+
+        <label for="editDescricao">Descrição / Música usada *</label>
+        <input type="text" id="editDescricao" placeholder="Ex: Áudio: Song of Healing (Slowed)" required>
+
+        <label for="editTag">Tag / Número da Edit</label>
+        <input type="text" id="editTag" placeholder="Ex: 🎵 Edit #07" value="🎬 Edit Fanbase">
+
+        <label for="editCapa">Nome da imagem de capa (na pasta public/) ou URL</label>
+        <input type="text" id="editCapa" placeholder="Ex: images (1).jpg">
+
+        <label for="editLink">Link do TikTok / Vídeo *</label>
+        <input type="url" id="editLink" placeholder="https://www.tiktok.com/@kailtern/..." required>
+
+        <div class="modal-actions">
+          <button type="button" class="btn-cancelar" onclick="fecharModalEdit()">Cancelar</button>
+          <button type="submit" class="btn-add-edit">Salvar Edit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&lt;ter&gt; Fanbase • Galeria de Edits do <strong>Kailtern</strong></p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    const STORAGE_EDITS = 'terFanbaseEdits';
+
+    function abrirModalEdit() {
+      document.getElementById('modalEdit').style.display = 'flex';
+    }
+
+    function fecharModalEdit() {
+      document.getElementById('modalEdit').style.display = 'none';
+      document.getElementById('formNovaEdit').reset();
+    }
+
+    function carregarEditsSalvas() {
+      const grid = document.getElementById('editsGrid');
+      const salvas = JSON.parse(localStorage.getItem(STORAGE_EDITS) || '[]');
+
+      salvas.forEach((edit, index) => {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+          <a href="${edit.link}" target="_blank" rel="noopener noreferrer" class="card-img-link">
+            <img src="${edit.capa || 'images (1).jpg'}" alt="" onerror="this.style.display='none'">
+            <div class="img-hover-overlay"><span>▶ Assistir Edit</span></div>
+          </a>
+          <div class="product-info">
+            <h4>${edit.titulo}</h4>
+            <p class="product-desc">${edit.descricao}</p>
+            <div class="price-container">
+              <span class="price">${edit.tag || '🎬 Edit Fanbase'}</span>
+            </div>
+            <button type="button" onclick="assistirVideo('${edit.titulo.replace(/'/g, "\\'")}', '${edit.link}')">Assistir no TikTok</button>
+            <button type="button" class="btn-remover-custom" onclick="removerEdit(${index})">Remover Edit</button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function removerEdit(index) {
+      const salvas = JSON.parse(localStorage.getItem(STORAGE_EDITS) || '[]');
+      salvas.splice(index, 1);
+      localStorage.setItem(STORAGE_EDITS, JSON.stringify(salvas));
+      location.reload();
+    }
+
+    document.getElementById('formNovaEdit').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const novaEdit = {
+        titulo: document.getElementById('editTitulo').value.trim(),
+        descricao: document.getElementById('editDescricao').value.trim(),
+        tag: document.getElementById('editTag').value.trim(),
+        capa: document.getElementById('editCapa').value.trim(),
+        link: document.getElementById('editLink').value.trim()
+      };
+
+      const salvas = JSON.parse(localStorage.getItem(STORAGE_EDITS) || '[]');
+      salvas.push(novaEdit);
+      localStorage.setItem(STORAGE_EDITS, JSON.stringify(salvas));
+
+      fecharModalEdit();
+      location.reload();
+    });
+
+    document.addEventListener('DOMContentLoaded', carregarEditsSalvas);
+  </script>
+</body>
+</html>
